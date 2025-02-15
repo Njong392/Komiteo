@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="form.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <header class="logo">
+        <img class="navbar-logo" src="/images/image4.png" alt="logo" />
+      </header>
+
+      <div>
+        <ul class="links">
+          <li>
+            <a href="/">Tableau de bord</a>
+          </li>
+          <li>
+            <a href="/form.html">Gestion des comptes</a>
+          </li>
+          <li>
+            <a href="/editForm.html">Site internet</a>
+          </li>
+          <li>
+            <a href="/parametres.html">Paramètres</a>
+          </li>
+        </ul>
+      </div>
+
+      <input type="text" name="search" id="" placeholder="Rechercher">
+    </nav>
+
+    <main>
+      <form class="form-container">
+        <fieldset>
+          <legend>Administrateur(Secrétaire) et Adjoint</legend>
+
+          <div>
+            <div class="input-group">
+              <label for="chbx" class="custom-checkbox-label"
+                >Configuration du compte</label
+              >
+              <input
+                type="checkbox"
+                name="chbx"
+                id="chbx"
+                class="custom-checkbox-input"
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="chbx">Role</label>
+              <input type="checkbox" name="chbx" id="chbx" />
+            </div>
+
+            <div class="input-group">
+              <label for="chbx">Création de compte</label>
+              <input type="checkbox" name="chbx" id="chbx" />
+            </div>
+
+            <div class="input-group">
+              <label for="chbx">Tableau de bord/Rapport d'activité</label>
+              <input type="checkbox" name="chbx" id="chbx" />
+            </div>
+
+            <div class="input-group">
+              <label for="chbx">Gestion du site web et oeuvres social</label>
+              <input type="checkbox" name="chbx" id="chbx" />
+            </div>
+
+            <div class="input-group">
+              <label for="chbx">Gestion des PV du CSE</label>
+              <input type="checkbox" name="chbx" id="chbx" />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Données logiciel</legend>
+
+          <div>
+            <div class="input-group">
+              <label for="chbx"
+                >Base de données salariés/élus du CSE/ Entreprises</label
+              >
+              <input type="checkbox" name="chbx" id="chbx" />
+            </div>
+
+            <div class="input-group">
+              <label for="chbx">Modification des informations</label>
+
+              <input type="checkbox" name="chbx" id="chbx" />
+            </div>
+
+            <div class="input-group">
+              <label for="chbx">Notes et taches</label>
+
+              <input type="checkbox" name="chbx" id="chbx" />
+            </div>
+
+            <div class="input-group">
+              <label for="chbx">Voir les taches concernant les autres</label>
+
+              <input type="checkbox" name="chbx" id="chbx" />
+            </div>
+
+            <div class="input-group">
+              <label for="chbx">Configuration générale Espace</label>
+
+              <input type="checkbox" name="chbx" id="chbx" />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Trésorier et Adjoint</legend>
+
+          <div>
+            <div class="input-group">
+              <label for="chbx">Gestion des comptes du CSE</label>
+              <input type="checkbox" name="chbx" id="chbx" />
+            </div>
+
+            <div class="input-group">
+              <label for="chbx">Gestion des oeuvres social</label>
+              <input type="checkbox" name="chbx" id="chbx" />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Membres CSST ou CSE</legend>
+
+          <div class="checkbox-group">
+    <div class="checkbox-header">
+      <span></span>
+      <span>CSST</span>
+      <span>CSE</span>
+    </div>
+
+    <div class="checkbox-item">
+      <label for="chbx1">Gestion des enquetes</label>
+      <input type="checkbox" id="chbx1-csst" name="chbx1-csst">
+      <input type="checkbox" id="chbx1-cse" name="chbx1-cse">
+    </div>
+
+    <div class="checkbox-item">
+      <label for="chbx2">Gestion extration enquetes</label>
+      <input type="checkbox" id="chbx2-csst" name="chbx2-csst">
+      <input type="checkbox" id="chbx2-cse" name="chbx2-cse">
+    </div>
+
+    <div class="checkbox-item">
+      <label for="chbx3">Arbres des causes</label>
+      <input type="checkbox" id="chbx3-csst" name="chbx3-csst">
+      <input type="checkbox" id="chbx3-cse" name="chbx3-cse">
+    </div>
+
+    <div class="checkbox-item">
+      <label for="chbx3">Réalisation enquetes</label>
+      <input type="checkbox" id="chbx3-csst" name="chbx3-csst">
+      <input type="checkbox" id="chbx3-cse" name="chbx3-cse">
+    </div>
+    
+  </div>
+        </fieldset>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
