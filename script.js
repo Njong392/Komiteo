@@ -3,14 +3,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
   navItems.forEach((item) => {
     item.addEventListener("click", function () {
-      event.preventDefault()
-      navItems.forEach((navItem) => navItem.classList.remove("active"))
-      this.classList.add("active")
-      
-      //  setTimeout(() => {
-      //    window.location.href = this.querySelector("a").href;
-      //  }, 100);
+      navItems.forEach((navItem) => navItem.classList.remove("active"));
 
+      this.classList.add("active");
+
+      // Store the URL to navigate to
+      const targetURL = this.querySelector("a").href;
+
+      setTimeout(() => {
+        window.location.href = targetURL;
+      }, 100);
     });
+  });
+
+  // Set active state based on current URL
+  const currentURL = window.location.href;
+  navItems.forEach((item) => {
+    const link = item.querySelector("a").href;
+    if (currentURL === link) {
+      item.classList.add("active");
+    }
   });
 });
