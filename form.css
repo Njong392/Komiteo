@@ -9,14 +9,14 @@
 }
 
 fieldset{
-    border: 2px dashed dodgerblue;
+    border: 1px dashed dodgerblue;
     padding: 1rem;
-    border-radius: 15px;
+    border-radius: 1.5rem;
     
 }
 
 legend{
-    background-color: bisque;
+    background-color: rgb(252, 229, 205);
     padding: 10px;
     border-radius: 5px;
     font-size: larger;
@@ -32,7 +32,7 @@ fieldset > div{
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .checkbox-group {
@@ -45,6 +45,34 @@ fieldset > div{
 .checkbox-header {
   display: contents;
 }
+
+.hidden-checkbox{
+  display: none;
+}
+
+.custom-checkbox{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 2px dashed dodgerblue;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  background: rgb(238, 238, 238);
+}
+
+.hidden-checkbox:checked + .custom-checkbox::after{
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+}
+
 
 .checkbox-header span {
   font-weight: bold;
