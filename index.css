@@ -12,8 +12,8 @@
 .container > div{
     font-family: "Architects Daughter", serif;
     font-weight:700;
-    font-size: 1.5rem;
-    color: darkorange;
+    font-size: 2.5rem;
+    color: rgb(230, 145, 56);
 }
 
 .header{
@@ -27,58 +27,35 @@
  
 }
 
-.square-left{
-    width: 50px;
-    height: 50px;
-    background-color:brown;
-}
-
 .header-content img{
     max-height: 70px;
     
 }
 
-.square{
-    width: 50px;
-    height: 50px;
-    background-color:brown;
-    position: absolute;
-}
 
 .article-1{
     display: flex;
-    position: relative;
     align-items: center;
-    justify-content: space-between;
+    column-gap: 1em;
     width: 60%;
+    text-align: center;
     background-color: #f0f0f0;
-    border-radius: 5px;
+    border-radius: 1.5rem;
     padding: 1em;
 }
 
-.article-1 img{
-   
+.article-1 img{ 
     width: 100px;
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.top-square{
-    top: 0;
-    right: 0;
-}
-
-.bottom-square{
-    bottom: 0;
-    right: 0;
-}
-
 .article-section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: (2, auto);
-    margin-top: 2em;
+    margin-top: 10px;
     justify-items: center;
     align-content: center;
      row-gap: 1rem;
@@ -87,15 +64,13 @@
 section article{
     display: flex;
     align-items: center;
-    column-gap: 2em;
+    column-gap: 1em;
     width: 95%;
     text-align: center;
     background-color: #f0f0f0;
-    border-radius: 5px;
+    border-radius: 1.5rem;
     padding: 1em;
-   position: relative;
-   
-
+    height: fit-content;
 }
 
 

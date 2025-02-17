@@ -30,20 +30,20 @@ a {
     background-color: #f0f0f0;
     align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: darkorange;
+    color: rgb(230, 154, 56);
     font-weight: bold;
     font-size: large;
     height: 60px;
-    padding: 35px;
+    padding: 0 46px;
 }
 
 .nav-item{
-   padding: 0.7rem;  
+   padding:1rem; 
+   
 }
 
-
 .nav-item.active{
-    background-color: bisque;
+    background-color: rgb(252, 229, 205);
 }
 
 .navbar-logo{
@@ -53,11 +53,12 @@ a {
 }
 
 .links{
-    padding: 0 4rem;
+    
     display: flex;
-    row-gap: 8rem;
-    column-gap: 4rem;
+    
+    height: 100%;
     margin: 0 2rem;
+    gap: 1rem;    
 }
 
 .navbar input{
@@ -65,24 +66,24 @@ a {
     border-radius: 5px;
     border: none;
     font-weight: bold;
-    font-size: large;
-    background-color: darkgray;
-    margin-right: 2rem;
+    font-size: larger;
+    background-color: rgb(183, 183, 183);
+    margin-right: 4rem;
 }
 
 .sidebar{ 
     display: flex;
     flex-direction: column;  
-    background-color: #f0f0f0;
-    border-radius: 30px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 3rem;
     padding: 1rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .img-container{
-    background-color: darkgray;
+    background-color: rgb(204, 204, 204);
     padding: 5px;
-    border-radius: 3px;
+    border-radius: 2rem;
     position: relative;
     display: flex;
     justify-content: center;
@@ -92,6 +93,7 @@ a {
 .img-container img{
     height: 8em;
     width: 100%;
+    border-radius: 2rem;
 }
 
 .text-container{

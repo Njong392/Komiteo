@@ -26,14 +26,14 @@
 }
 
 fieldset{
-    border: 2px dashed darkorange;
+    border: 1px dashed rgb(230, 145, 56);
     padding: 1rem;
-    border-radius: 10px;
+    border-radius: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
 legend{
-    background-color: bisque;
+    background-color: rgb(252, 229, 205);
     padding: 10px;
     border-radius: 5px;
     font-size: larger;
@@ -51,7 +51,7 @@ legend{
 }
 
 .input-name{
-    background-color: bisque;
+    background-color: rgb(252, 229, 205);
     border: none;
     padding: 10px;
     width: 20rem;
@@ -62,7 +62,7 @@ legend{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    border: 2px dashed darkorange;
+    border: 1px dashed rgb(230, 145, 56);
     border-radius: 5px;
 }
 
