@@ -65,7 +65,7 @@ fieldset > div{
   content: "";
   width: 10px;
   height: 10px;
-  background: red;
+  background: dodgerblue;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -74,20 +74,52 @@ fieldset > div{
 }
 
 
-.checkbox-header span {
-  font-weight: bold;
-  text-align: center;
+.checkbox-group {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr 0.5fr;
+    gap: 1rem;
+    align-items: center;
+   
 }
 
-.checkbox-item {
+.checkbox-header  span{
+    font-weight: bold;
+    text-align: center;
+     
+}
+
+.checkbox-item{
   display: contents;
 }
 
 .checkbox-item label {
-  grid-column: 1;
+    margin-right: 1rem;
 }
 
 .checkbox-item input {
-  grid-column: span 1;
-  justify-self: center;
+    display: none;
+}
+
+.checkbox-item .custom-checkbox {
+  
+    justify-self: center;
+    width: 25px;
+    height: 25px;
+    border: 2px dashed dodgerblue;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    background: rgb(238, 238, 238);
+}
+
+.checkbox-item input:checked + .custom-checkbox::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: dodgerblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
 }
